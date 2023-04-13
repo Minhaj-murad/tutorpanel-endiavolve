@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+
+    <!-- fontawesome cdn link (6.2.1) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+ 
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="/tutorpanel-dashboard/tutorpanel-dash/tutorpanel-dash.css">
+    <link rel="stylesheet" href="/tutorpanel-dashboard/tutorpanel-dash/Videolists/videolists.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-light sticky-top d-flex justify-content-between  py-0">
+        <a href="#" class="me-4">
+
+            <img src="/tutorpanel-dashboard/images/logo.png" style="height: 40px; " alt="">
+        </a>
+        <a href="#" class="tutorpanel-sidebar-toggler flex-shrink-0" id="tutorpanel-navlink-bar">
+            <i class="fa fa-bars" id="tutorpanel-navlink-bar-text"></i>
+        </a>
+
+        <div class="navbar-nav align-items-center ms-auto">
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <i class="fa fa-envelope" id="tutorpanel-navlink-message"></i>
+
+                </a>
+                <div class="dropdown-menu dropdown-menu-end ">
+                    <ul class="navbar-ul">
+                        <li class="dropdown-item">Karim sends you a message</li>
+                        <li class="dropdown-item">Riha sends you a message</li>
+                        <li class="dropdown-item">Sahed sends you a message</li>
+                        <li class="dropdown-item">Hasan sends you a message</li>
+                        <li class="dropdown-item" style="border: none;">Sahed sends you a message</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <i class="fa fa-bell " id="tutorpanel-navlink-notification"></i>
+
+                </a>
+                <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+
+                    <ul class="navbar-ul">
+                        <li class="dropdown-item">
+                            <h6 class="fw-normal mb-0">Profile updated</h6>
+                            <small>15 minutes ago</small>
+                        </li>
+                        <li class="dropdown-item">
+                            <h6 class="fw-normal mb-0">New user added</h6>
+                            <small>15 minutes ago</small>
+                        </li>
+                        <li class="dropdown-item " style="border: none;">
+                            <h6 class="fw-normal mb-0">Password changed</h6>
+                            <small>15 minutes ago</small>
+                        </li>
+
+                    </ul>
+
+
+
+                </div>
+            </div>
+            <div class="nav-item dropdown ms-4">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <img class="rounded-circle " src="/tutorpanel-dashboard/images/x9.jpg" alt=""
+                        style="width: 40px; height: 40px;">
+                    <span class="d-none d-lg-inline-flex" id="tutorpanel-user-name">Zayn Malik</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+
+                    <ul class="navbar-ul-profile p-2">
+                        <div class="tutorpanel-nav-user-profile d-flex align-items-center justify-content-center pb-3">
+                            <img src="/tutorpanel-dashboard/images/x9.jpg"
+                                style="height: 60px; width: 60px; border-radius: 50%;" alt="">
+                            <div class="ms-4">
+                                <h6 class="tutorpanel-user-name1">Zayn Malik</h6>
+                                <p class="mb-0">Zayn@gmail.com</p>
+                            </div>
+
+                        </div>
+                        <li>
+                            <a href="/tutorpanel-dashboard/tutorpanel-dash/tutorpanel-editprofile/tutorpanel-editprofile.html"
+                                class="dropdown-item d-flex justify-content-between align-items-center mt-2 "
+                                style="border: none;">
+                                <div class="dropdown-item-data d-flex justify-content-center align-items-center ">
+                                    <i class="fa-solid fa-user tutorpanel-user-icon" id=""></i>
+                                    <span class="ms-4 tutorpanel-user-text ">Edit Profile</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-chevron-right "></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-item d-flex justify-content-between align-items-center mt-2 "
+                            style="border: none;">
+                            <div class="dropdown-item-data d-flex justify-content-center align-items-center ">
+                                <i class="fa-solid fa-gear tutorpanel-user-icon"></i>
+                                <span class="ms-4 tutorpanel-user-text">Setting and Privacy</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+                        <li class="dropdown-item d-flex justify-content-between align-items-center mt-2 "
+                            style="border: none;">
+                            <div class="dropdown-item-data d-flex justify-content-center align-items-center ">
+                                <i class="fa-solid fa-question tutorpanel-user-icon"></i>
+                                <span class="ms-4 tutorpanel-user-text">Help and Support</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+                        <li class="dropdown-item d-flex justify-content-between align-items-center mt-2 "
+                            style="border: none;">
+                            <div class="dropdown-item-data d-flex justify-content-center align-items-center ">
+                                <i class="fa-solid fa-moon tutorpanel-user-icon"></i>
+                                <span class="ms-4 tutorpanel-user-text">Display and Accessibility</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+                        <li class="dropdown-item d-flex justify-content-between align-items-center mt-2 "
+                            style="border: none;">
+                            <div class="dropdown-item-data d-flex justify-content-center align-items-center ">
+                                <i class="fa-solid fa-right-to-bracket tutorpanel-user-icon"></i>
+                                <span class="ms-4 tutorpanel-user-text">Logout</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div>
+        <!-- tutorpanel-sidebar Start -->
+        <div id="tutorpanel-sidebar" class="tutorpanel-sidebar">
+            <nav class="navbar bg-light navbar-light">
+
+                <div class="navbar-nav w-100">
+                    <a href="/tutorpanel-dashboard/tutorpanel-dash/tutorpaneldash.html" class="nav-item nav-link "><i
+                            class="fa fa-tachometer-alt me-2 " style="
+                        background: none" style="
+                        background: none"></i><span class="tutorpanel-user-text"> Video Lists </span></a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                class="fa fa-laptop me-2 " style="
+                        background: none"></i><span class="tutorpanel-user-text"> Tutor Panel</span></a>
+                        <div class="dropdown-menu bg-transparent border-0" style="
+                        padding-block: 0;
+                        margin: 0;">
+
+                            <a href="/tutorpanel-dashboard/tutorpanel-dash/questionlists/questionlists.html" class="dropdown-item">Question Lists</a>
+                            
+
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                class="fa fa-keyboard me-2 " style="
+                        background: none"></i><span class="tutorpanel-user-text"> Landing Page</span></a>
+                        <div class="dropdown-menu bg-transparent border-0" style="
+                        padding-block: 0;
+                        margin: 0;">
+
+                            <a href="/blogs/blogs.html" class="dropdown-item">Blogs</a>
+                            <a href="/career/career.html" class="dropdown-item">Career Lists</a>
+                            <a href="/contacts/contacts.html" class="dropdown-item">Contact Us Lists</a>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </nav>
+        </div>
+        <!-- tutorpanel-sidebar End -->
+
+
+
+
+
+
+         <!-- Content Start -->
+         <div class="content">
+
+            <!-- tutorpanel-videolists -->
+            <section>
+                <div class="container-fluid tutorpanel-videolists-page">
+
+
+
+                    <main class="table">
+                        <div class="table__header">
+                            <div>
+                                <h4 class="table-heading-text">Video Lists</h4>
+                            </div>
+                            <!-- <div class="tutorpanel-videolists-add">
+                                <button type="button" class="btn tutorpanel-videolists-user-btn" data-bs-toggle="modal"
+                                    data-bs-target="#userModal">  Add Video <i class="fa-solid fa-plus"
+                                    id="tutorpanel-videolists-user-btn-plus"></i></button>
+                            </div> -->
+                        </div>
+
+
+                       <div class="table__body">
+                        <div class="table_body_header mt-2">
+                            <div>
+
+                            </div>
+                            <div class="allusers-input-field" style="  background-color: rgba(144, 141, 141, 0.333);">
+                                <input type="search" class="alluserdata-input-group-search" placeholder="Search Data..."
+                                    style="border: none; outline: none; padding-inline: 20px">
+                                <img src="/tutorpanel-dashboard/images/search.png" alt="" style="height: 15px; width: 15px;">
+                            </div>
+                            <div class="export__file">
+                                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                                <input type="checkbox" id="export-file">
+                                <div class="export__file-options">
+                                    <label>Export As &nbsp; &#10140;</label>
+                                    <label for="export-file" id="toPDF">PDF <img src="/tutorpanel-dashboard/images/pdf.png"
+                                            alt=""></label>
+                                    <label for="export-file" id="toJSON">JSON <img src="/tutorpanel-dashboard/images/json.png"
+                                            alt=""></label>
+                                    <label for="export-file" id="toCSV">CSV <img 
+                                        src="/tutorpanel-dashboard/images/csv.png"
+                                            alt=""></label>
+                                    <label for="export-file" id="toEXCEL">EXCEL <img src="/tutorpanel-dashboard/images/excel.png"
+                                            alt=""></label>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="" method="post">
+                            <div class="row mb-4 justify-content-center g-3 ms-5">
+                                <div class=" col-12 col-md-4 col-lg-3 col-xl-2">
+                                    <select name="" id="" class="form-select playlist-select-subject">
+                                        <option value="" selected disabled>Select Semester</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+
+                                    </select>
+                                </div>
+
+                                <div class=" col-12 col-md-4 col-lg-3 col-xl-2">
+                                    <select name="" id="" class="form-select playlist-select-chapter">
+                                        <option value="" selected disabled>Select Course</option>
+                                        <option class="option" value="1">Btech</option>
+                                        <option class="option" value="2">BE</option>
+                                        <option class="option" value="3">Diploma</option>
+                                    </select>
+                                </div>
+
+                                <div class=" col-12 col-md-4 col-lg-3 col-xl-2">
+                                    <select name="" id="" class="form-select playlist-select-chapter">
+                                        <option value="" selected disabled>Select Branch</option>
+                                        <option class="option" value="1">Computer Science and Engineering</option>
+                                        <option class="option" value="2">Electrical and Electronic Engineering</option>
+                                        <option class="option" value="3">Mechanical Engineering</option>
+                                    </select>
+                                </div>
+                                <div class=" col-12 col-md-4 col-lg-3 col-xl-2">
+                                    <button type="submit" class="tutorpanel-videolists-form-submit-btn">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <table>
+                            <thead class="tutorpanel-videolists-thead">
+                                <tr class="tutorpanel-videolists-tr">
+                                    <th scope="col" class="tutorpanel-videolists-tabledata-head">Id <span
+                                        class="icon-arrow">&UpArrow;</span></th>
+                                        <th scope="col" class="tutorpanel-videolists-tabledata-head">Title <span
+                                            class="icon-arrow">&UpArrow;</span></th>
+                                        <th scope="col" class="tutorpanel-videolists-tabledata-head">Description <span
+                                            class="icon-arrow">&UpArrow;</span></th>
+                                        <th scope="col" class="tutorpanel-videolists-tabledata-head">Chapter Name <span
+                                            class="icon-arrow">&UpArrow;</span></th>
+                                    <th scope="col" class="tutorpanel-videolists-tabledata-head">Thumbnail </th>
+                                    <th scope="col" class="tutorpanel-videolists-tabledata-head">Video </th>
+                                   
+                                  
+                                    <th scope="col" class="tutorpanel-videolists-tabledata-head">Course <span
+                                        class="icon-arrow">&UpArrow;</span></th>
+                                    <th scope="col" class="tutorpanel-videolists-tabledata-head">Branch <span
+                                        class="icon-arrow">&UpArrow;</span></th>
+                                    <th scope="col" class="tutorpanel-videolists-tabledata-head">Semester <span
+                                        class="icon-arrow">&UpArrow;</span></th>
+                                 
+                                    
+                                    <th scope="col" class="tutorpanel-videolists-tabledata-head">Actions
+                                    </th>
+                                  
+                        
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="tutorpanel-videolists-tr">
+                                    <th scope="row" class="tutorpanel-videolists-tabledata">1</th>
+                                   
+                                    <td class="tutorpanel-videolists-tabledata">Fundamental of Computer Science</td>
+                                    <td class="tutorpanel-videolists-tabledata"> <p class="tutorpanel-videolists-tabledata-messages-container">Message Here Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, dolorum?</p> </td>
+                                    <td class="tutorpanel-videolists-tabledata">C and C++</td>
+                                    <td class="tutorpanel-videolists-tabledata"><img
+                                        src="https://northglennews.co.za/wp-content/uploads/sites/51/2022/07/nature-conservation-4352793_1280.jpg"
+                                        alt="" style="height: 50px; width: 50px; border-radius: 5px;"></td>
+                                    
+                                    <td class="tutorpanel-videolists-tabledata">
+                                        <a href="">Play</a>
+                                    </td>
+                                    
+                                    <td class="tutorpanel-videolists-tabledata">Btech</td>
+                                    <td class="tutorpanel-videolists-tabledata">Computer Science Engineering</td>
+                                    <td class="tutorpanel-videolists-tabledata">
+                                        8th
+                                    </td>
+                                   
+                                    <td class="tutorpanel-videolists-tabledata">
+                        
+                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye tutorpanel-videolists-view"></i></a>
+                        
+                        
+                        
+                                        <a class="" href="/subjectlist-edit/subjectlist-edit.html"><i
+                                                class="fa-solid fa-pen-to-square tutorpanel-videolists-edit"></i></a>
+                        
+                        
+                                 
+                                        <!-- Button trigger modal -->
+                        
+                                        <a class="" href="" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can tutorpanel-videolists-delete"></i></a>
+                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="0"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                        
+                                                    <div class="modal-body">
+                                                        <h5> Are you sure,you want to delete this user?</h5>
+                                                        <div class="alluserdata-modal-body">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-danger">Delete</button>
+                                                        </div>
+                                                    </div>
+                        
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                        
+                                    </td>
+                        
+                                </tr>
+                                <tr class="tutorpanel-videolists-tr">
+                                    <th scope="row" class="tutorpanel-videolists-tabledata">2</th>
+                                   
+                                    <td class="tutorpanel-videolists-tabledata">Fundamental of Computer Science</td>
+                                    <td class="tutorpanel-videolists-tabledata"> <p class="tutorpanel-videolists-tabledata-messages-container">Message Here Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, dolorum?</p> </td>
+                                    <td class="tutorpanel-videolists-tabledata">C and C++</td>
+                                    <td class="tutorpanel-videolists-tabledata"><img
+                                        src="https://northglennews.co.za/wp-content/uploads/sites/51/2022/07/nature-conservation-4352793_1280.jpg"
+                                        alt="" style="height: 50px; width: 50px; border-radius: 5px;"></td>
+                                    
+                                    <td class="tutorpanel-videolists-tabledata">
+                                        <a href="">Play</a>
+                                    </td>
+                                    
+                                    <td class="tutorpanel-videolists-tabledata">Btech</td>
+                                    <td class="tutorpanel-videolists-tabledata">Computer Science Engineering</td>
+                                    <td class="tutorpanel-videolists-tabledata">
+                                        8th
+                                    </td>
+                                   
+                                    <td class="tutorpanel-videolists-tabledata">
+                        
+                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye tutorpanel-videolists-view"></i></a>
+                        
+                        
+                        
+                                        <a class="" href="/subjectlist-edit/subjectlist-edit.html"><i
+                                                class="fa-solid fa-pen-to-square tutorpanel-videolists-edit"></i></a>
+                        
+                        
+                                 
+                                        <!-- Button trigger modal -->
+                        
+                                        <a class="" href="" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can tutorpanel-videolists-delete"></i></a>
+                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="0"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                        
+                                                    <div class="modal-body">
+                                                        <h5> Are you sure,you want to delete this user?</h5>
+                                                        <div class="alluserdata-modal-body">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-danger">Delete</button>
+                                                        </div>
+                                                    </div>
+                        
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                        
+                                    </td>
+                        
+                                </tr>
+                                <tr class="tutorpanel-videolists-tr">
+                                    <th scope="row" class="tutorpanel-videolists-tabledata">3</th>
+                                   
+                                    <td class="tutorpanel-videolists-tabledata">Fundamental of Computer Science</td>
+                                    <td class="tutorpanel-videolists-tabledata"> <p class="tutorpanel-videolists-tabledata-messages-container">Message Here Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, dolorum?</p> </td>
+                                    <td class="tutorpanel-videolists-tabledata">C and C++</td>
+                                    <td class="tutorpanel-videolists-tabledata"><img
+                                        src="https://northglennews.co.za/wp-content/uploads/sites/51/2022/07/nature-conservation-4352793_1280.jpg"
+                                        alt="" style="height: 50px; width: 50px; border-radius: 5px;"></td>
+                                    
+                                    <td class="tutorpanel-videolists-tabledata">
+                                        <a href="">Play</a>
+                                    </td>
+                                    
+                                    <td class="tutorpanel-videolists-tabledata">Btech</td>
+                                    <td class="tutorpanel-videolists-tabledata">Computer Science Engineering</td>
+                                    <td class="tutorpanel-videolists-tabledata">
+                                        8th
+                                    </td>
+                                   
+                                    <td class="tutorpanel-videolists-tabledata">
+                        
+                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye tutorpanel-videolists-view"></i></a>
+                        
+                        
+                        
+                                        <a class="" href="/subjectlist-edit/subjectlist-edit.html"><i
+                                                class="fa-solid fa-pen-to-square tutorpanel-videolists-edit"></i></a>
+                        
+                        
+                                 
+                                        <!-- Button trigger modal -->
+                        
+                                        <a class="" href="" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can tutorpanel-videolists-delete"></i></a>
+                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="0"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                        
+                                                    <div class="modal-body">
+                                                        <h5> Are you sure,you want to delete this user?</h5>
+                                                        <div class="alluserdata-modal-body">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-danger">Delete</button>
+                                                        </div>
+                                                    </div>
+                        
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                        
+                                    </td>
+                        
+                                </tr>
+                                <tr class="tutorpanel-videolists-tr">
+                                    <th scope="row" class="tutorpanel-videolists-tabledata">4</th>
+                                   
+                                    <td class="tutorpanel-videolists-tabledata">Fundamental of Computer Science</td>
+                                    <td class="tutorpanel-videolists-tabledata"> <p class="tutorpanel-videolists-tabledata-messages-container">Message Here Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, dolorum?</p> </td>
+                                    <td class="tutorpanel-videolists-tabledata">C and C++</td>
+                                    <td class="tutorpanel-videolists-tabledata"><img
+                                        src="https://northglennews.co.za/wp-content/uploads/sites/51/2022/07/nature-conservation-4352793_1280.jpg"
+                                        alt="" style="height: 50px; width: 50px; border-radius: 5px;"></td>
+                                    
+                                    <td class="tutorpanel-videolists-tabledata">
+                                        <a href="">Play</a>
+                                    </td>
+                                    
+                                    <td class="tutorpanel-videolists-tabledata">Btech</td>
+                                    <td class="tutorpanel-videolists-tabledata">Computer Science Engineering</td>
+                                    <td class="tutorpanel-videolists-tabledata">
+                                        8th
+                                    </td>
+                                   
+                                    <td class="tutorpanel-videolists-tabledata">
+                        
+                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye tutorpanel-videolists-view"></i></a>
+                        
+                        
+                        
+                                        <a class="" href="/subjectlist-edit/subjectlist-edit.html"><i
+                                                class="fa-solid fa-pen-to-square tutorpanel-videolists-edit"></i></a>
+                        
+                        
+                                 
+                                        <!-- Button trigger modal -->
+                        
+                                        <a class="" href="" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can tutorpanel-videolists-delete"></i></a>
+                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="0"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                        
+                                                    <div class="modal-body">
+                                                        <h5> Are you sure,you want to delete this user?</h5>
+                                                        <div class="alluserdata-modal-body">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-danger">Delete</button>
+                                                        </div>
+                                                    </div>
+                        
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                        
+                                    </td>
+                        
+                                </tr>
+                                <tr class="tutorpanel-videolists-tr">
+                                    <th scope="row" class="tutorpanel-videolists-tabledata">5</th>
+                                   
+                                    <td class="tutorpanel-videolists-tabledata">Fundamental of Computer Science</td>
+                                    <td class="tutorpanel-videolists-tabledata"> <p class="tutorpanel-videolists-tabledata-messages-container">Message Here Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, dolorum?</p> </td>
+                                    <td class="tutorpanel-videolists-tabledata">C and C++</td>
+                                    <td class="tutorpanel-videolists-tabledata"><img
+                                        src="https://northglennews.co.za/wp-content/uploads/sites/51/2022/07/nature-conservation-4352793_1280.jpg"
+                                        alt="" style="height: 50px; width: 50px; border-radius: 5px;"></td>
+                                    
+                                    <td class="tutorpanel-videolists-tabledata">
+                                        <a href="">Play</a>
+                                    </td>
+                                    
+                                    <td class="tutorpanel-videolists-tabledata">Btech</td>
+                                    <td class="tutorpanel-videolists-tabledata">Computer Science Engineering</td>
+                                    <td class="tutorpanel-videolists-tabledata">
+                                        8th
+                                    </td>
+                                   
+                                    <td class="tutorpanel-videolists-tabledata">
+                        
+                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye tutorpanel-videolists-view"></i></a>
+                        
+                        
+                        
+                                        <a class="" href="/subjectlist-edit/subjectlist-edit.html"><i
+                                                class="fa-solid fa-pen-to-square tutorpanel-videolists-edit"></i></a>
+                        
+                        
+                                 
+                                        <!-- Button trigger modal -->
+                        
+                                        <a class="" href="" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can tutorpanel-videolists-delete"></i></a>
+                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="0"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                        
+                                                    <div class="modal-body">
+                                                        <h5> Are you sure,you want to delete this user?</h5>
+                                                        <div class="alluserdata-modal-body">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-danger">Delete</button>
+                                                        </div>
+                                                    </div>
+                        
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                        
+                                    </td>
+                        
+                                </tr>
+                                <tr class="tutorpanel-videolists-tr">
+                                    <th scope="row" class="tutorpanel-videolists-tabledata">6</th>
+                                   
+                                    <td class="tutorpanel-videolists-tabledata">Fundamental of Computer Science</td>
+                                    <td class="tutorpanel-videolists-tabledata"> <p class="tutorpanel-videolists-tabledata-messages-container">Message Here Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, dolorum?</p> </td>
+                                    <td class="tutorpanel-videolists-tabledata">C and C++</td>
+                                    <td class="tutorpanel-videolists-tabledata"><img
+                                        src="https://northglennews.co.za/wp-content/uploads/sites/51/2022/07/nature-conservation-4352793_1280.jpg"
+                                        alt="" style="height: 50px; width: 50px; border-radius: 5px;"></td>
+                                    
+                                    <td class="tutorpanel-videolists-tabledata">
+                                        <a href="">Play</a>
+                                    </td>
+                                    
+                                    <td class="tutorpanel-videolists-tabledata">Btech</td>
+                                    <td class="tutorpanel-videolists-tabledata">Computer Science Engineering</td>
+                                    <td class="tutorpanel-videolists-tabledata">
+                                        8th
+                                    </td>
+                                   
+                                    <td class="tutorpanel-videolists-tabledata">
+                        
+                                        <a class="" href="/subjectlist-view/subjectlist-view.html"><i class="fa-solid fa-eye tutorpanel-videolists-view"></i></a>
+                        
+                        
+                        
+                                        <a class="" href="/subjectlist-edit/subjectlist-edit.html"><i
+                                                class="fa-solid fa-pen-to-square tutorpanel-videolists-edit"></i></a>
+                        
+                        
+                                 
+                                        <!-- Button trigger modal -->
+                        
+                                        <a class="" href="" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can tutorpanel-videolists-delete"></i></a>
+                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="0"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                        
+                                                    <div class="modal-body">
+                                                        <h5> Are you sure,you want to delete this user?</h5>
+                                                        <div class="alluserdata-modal-body">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-danger">Delete</button>
+                                                        </div>
+                                                    </div>
+                        
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                        
+                                    </td>
+                        
+                                </tr>
+                                
+                                
+                        
+                             
+                        
+                        
+                        
+                            </tbody>
+                        </table>
+
+                        <!-- pagination -->
+                        <div class="tutorpanel-videolists-user-pagination-area" aria-label="Page navigation">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Prev</a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </div>
+                       </div>
+                    </main>
+
+
+
+                </div>
+
+            </section>
+            <!-- End User Data -->
+
+
+
+            <!-- Add Modal -->
+            <section>
+                <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-add">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title">Add Chapter</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <form class="user-data-feedback-form" method="post">
+
+
+                                        <select name="fcourse" id="course" aria-placeholder="Course" class="form-select"
+                                            required oninvalid="this.setCustomValidity('Please select your course')"
+                                            oninput="this.setCustomValidity('')">
+                                            <option class="option" value="" selected disabled>Course</option>
+                                            <option class="option" value="1">Btech</option>
+                                            <option class="option" value="2">BE</option>
+                                            <option class="option" value="3">Diploma</option>
+                                        </select>
+
+                                        <select name="fyear" id="year" aria-placeholder="Year" class="form-select"
+                                            required oninvalid="this.setCustomValidity('Please select your Semester')"
+                                            oninput="this.setCustomValidity('')">
+                                            <option class="option" value="" selected disabled>Year / Semester</option>
+                                            <option class="option" value="1">1</option>
+                                            <option class="option" value="2">2</option>
+                                            <option class="option" value="3">3</option>
+                                            <option class="option" value="4">4</option>
+                                            <option class="option" value="5">5</option>
+                                            <option class="option" value="6">6</option>
+                                            <option class="option" value="7">7</option>
+                                            <option class="option" value="8">8</option>
+                                        </select>
+
+                                        <input type="text" name="branch" placeholder="Branch Name" class="form-control"
+                                            required oninvalid="this.setCustomValidity('Please enter Branch Name')"
+                                            oninput="this.setCustomValidity('')">
+
+                                        <input type="text" name="chapter" placeholder="Chapter Name"
+                                            class="form-control" required
+                                            oninvalid="this.setCustomValidity('Please enter Chapter Name')"
+                                            oninput="this.setCustomValidity('')">
+
+
+                                        <input type="file" accept="image/*,.pdf" name="images"
+                                            placeholder="Upload Image" class="form-control" required
+                                            oninvalid="this.setCustomValidity('Please Upload Image')"
+                                            oninput="this.setCustomValidity('')">
+
+
+
+
+                                        <div class="user-data-feedback-submit" id="send-btn">
+                                            <input class="btn" type="submit" name="" value="Submit">
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Add Modal -->
+
+
+
+            <!-- Delete Popup -->
+            <section>
+                <div class="modal fade" id="userDeleteModal" tabindex="-1" aria-labelledby="modalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-delete">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <p>Do you really want to delete this?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn tutorpanel-videolists-user-btn me-2">Yes</button>
+                                <button type="button" class="btn tutorpanel-videolists-user-btn"
+                                    data-bs-dismiss="modal">No</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Delete Popup -->
+
+            <script>
+                $('.pagination .page-item').click(function () {
+                    $(this).addClass("active").siblings().removeClass("active");
+                });
+
+
+            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <!-- Content ends -->
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <!-- JavaScript Libraries -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script>
+        (function ($) {
+            "use strict";
+
+
+            // tutorpanel-sidebar Toggler
+            $('.tutorpanel-sidebar-toggler').click(function () {
+                $('.tutorpanel-sidebar, .content').toggleClass("open");
+                return false;
+            });
+
+
+
+
+
+        })(jQuery);
+
+    </script>
+
+
+    <!-- limiting word -->
+<script>
+    // var bloggersdata = document.getElementsByClassName("bloglists-tabledata-content");
+   
+    // var myText = document.getElementsByClassName("bloglists-tabledata-meassage");
+
+    $(function () {
+    
+    var maxL = 50;
+    
+    $('.tutorpanel-videolists-tabledata-messages-container').each(function () {
+        
+        var text = $(this).text();
+        if(text.length > maxL) {
+            
+            var begin = text.substr(0, maxL),
+                end = text.substr(maxL);
+
+            $(this).html(begin)
+                .append($('<a class="readmore"/>').attr('href', '#').html('...'))
+                .append($('<div class="hidden"/>').html(end));
+                
+            
+        }
+        
+        
+    });
+            
+  
+    
+    
+})
+       
+   </script>
+
+
+<!--  -->
+<script src="/tutorpanel-dashboard/js/tutorpnel-dash.js"></script>
+
+</body>
+
+</html>

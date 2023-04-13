@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="/tutorpanel-dashboard/css/tutorpanel-dashboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+         <!-- animate css -->
+         <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+       />
+</head>
+
+<body>
+
+    <div class="tutorpanel-forgotpass-container">
+        <div class="tutorpanel-forgotpass-container-upper animate__animated animate__bounce animate__fast">
+            <div class="tutorpanel-forgotpass-container-form-top">
+                <img class="tutorpanel-forgotpass-container-form-top-logo" src="/tutorpanel-dashboard/images/logo2.png" height="120px">
+                
+            </div>
+
+        </div>
+
+        <div class="tutorpanel-forgotpass-container-form animate__animated animate__heartBeat animate__fast ">
+
+
+
+
+            <div class="tutorpanel-forgotpass-container-form-main ">
+                <form action="" method="post">
+                    <h3 class="tutorpanel-forgotpass-container-form-name">Forgot Password</h3> 
+
+                   
+
+
+                 
+                    <div class="tutorpanel-forgotpass-container-form-email">
+                        <div class="tutorpanel-forgotpass-container-text-box">
+                            <p>Enter the email of your account to reset password.</p>
+                            <p>Then you will receive a link to email to reset the password.If</p>
+                            <p>you have any issue about reset password
+                                <span>
+                                <a style="color:#3742fa;" id="tutorpanel-forgotpass-container-find-contact" href="http://endiavolve.com/contact">contact us</a>
+                                </span>
+                            </p>
+                        </div>
+                        <label for="" class="tutorpanel-forgotpass-container-form-fieldname">Email</label> <br>
+                       
+                        <span> <i class="fas fa-user"
+                                style="cursor: pointer;  position: absolute; margin-top: 10px;"></i></span>
+                        <input type="email" name="name" class="tutorpanel-forgotpass-input-field" placeholder="email" required>
+                    </div>
+
+                   
+
+
+              
+
+                    <button class="tutorpanel-forgotpass-subimt-button"> Continue</button>
+                </form>
+
+            </div>
+
+
+         
+            <div class="tutorpanel-forgotpass-conditions">
+                <div class="tutorpanel-forgotpass-conditions-topic">
+                    <a href="termsconditions.html" class="tutorpanel-forgotpass-conditions-topics">Terms & Conditions </a>
+                    <div class="vl"></div>
+                    <a href="privacypolicy.html" class="tutorpanel-forgotpass-conditions-topics">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+
+   
+    <script>
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#id_password');
+       
+      
+      togglePassword.addEventListener('click', function (e) {
+        // toggle the type attribute
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        // toggle the eye slash icon
+        this.classList.toggle('fa-eye-slash');
+    });
+    </script>
+</body>
+
+</html>

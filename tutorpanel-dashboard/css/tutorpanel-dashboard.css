@@ -1,0 +1,558 @@
+/*================================================================================================================
+        DEFAULT VALUES:
+        Font Family                 :   "Roboto Condensed", sans-serif
+        
+        Greenish Blue               :   #3742fa or rgb(55, 66, 250)    (buttons, Icons, Links, lines & Backgrounds)
+        Steel Gray                  :   #41464b     (Headings)
+        Blue Bayoux                 :   #64707b     (paragraphs)
+        white                       :   #fff        (text with black backgrounds)
+        Black                       :   #000        ()
+        hover                       :   #ffa502 or rgb(255, 165, 2)     (hover)
+=================================================================================================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Roboto Condensed';
+   
+
+}
+.tutorpanel-dashboard{
+    background: #dfe6e9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+.tutorpanel-dashboard-container {
+    background-color: #fff;
+    width: 50vw;
+    border-radius: 10px;
+    height: auto;
+    padding-block: 20px;
+    margin-inline: auto;
+  
+}
+
+.tutorpanel-dashboard-container-form-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tutorpanel-dashboard-name{
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    align-items: center;
+}
+
+
+
+.tutorpanel-dashboard-container-form-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tutorpanel-dashboard-container-form-name{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+
+
+.tutorpanel-dashboard-container-form-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tutorpanel-dashboard-container-form-email {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.tutorpanel-dashboard-subimt-button {
+   
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #3742fa;
+    border: 2px solid gray;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    padding: 7px 25px;
+    transition: all 0.5s ease-in-out;
+}
+.tutorpanel-dashboard-subimt-button:hover {
+  
+    background-color: #ffa502;
+  
+    
+}
+.tutorpanel-dashboard-subimt-button-text{
+    color: #fff;
+    text-decoration: none;
+}
+.tutorpanel-dashboard-subimt-button-text:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.tutorpanel-dashboard-container-form-fieldname{
+    font-size: 18px;
+    font-weight: 600;
+}
+.tutorpanel-dashboard-input-field{
+    text-align: center;
+    height: 40px;
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+.tutorpanel-dashboard-input-field:focus {
+   border: none;
+   border-bottom: 2px solid gray;
+   outline: none;
+
+}
+
+.tutorpanel-dashboard-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.tutorpanel-dashboard-conditions-topic{
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+   
+}
+.tutorpanel-dashboard-conditions-topics{
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-inline: 10px;
+}
+.vl {
+  border-left: 2px solid rgb(7, 8, 7);
+  height: 20px;
+  font-weight: 600;
+  align-items: center;
+}
+.tutorpanel-confirmpass-others{
+    width: 30vw;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tutorpanel-confirmpass-others-topics{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 626px) {
+
+    
+.tutorpanel-dashboard-container {
+    width: 100vw;
+    height: auto;
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-inline: auto;
+  
+}
+.tutorpanel-confirmpass-others{
+    width: 90vw;
+}
+}
+
+
+
+/* forgot password */
+
+
+.tutorpanel-forgotpass-container{
+    background: #dfe6e9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+.tutorpanel-forgotpass-container-upper{
+    padding-top: 40px;
+    color: whitesmoke;
+}
+.tutorpanel-forgotpass-container-form {
+    background-color: #fff;
+    width: 40vw;
+    border-radius: 10px;
+    height: auto;
+    margin-top: 40px;
+    padding-block: 20px;
+    margin-inline: auto;
+  
+}
+
+
+.tutorpanel-forgotpass-container-form-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tutorpanel-forgotpass-name{
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    align-items: center;
+}
+.tutorpanel-forgotpass-container-form-top-logo {
+    margin-right: 10px;
+}
+
+
+.tutorpanel-forgotpass-container-form-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tutorpanel-forgotpass-container-form-name{
+    text-align: center;
+    font-weight: 600;
+  
+}
+
+
+
+.tutorpanel-forgotpass-container-form-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tutorpanel-forgotpass-container-form-email {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.tutorpanel-forgotpass-subimt-button {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #3742fa;
+    border: 2px solid gray;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    padding: 7px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tutorpanel-forgotpass-subimt-button:hover {
+  
+    background-color: #ffa502;
+}
+
+.tutorpanel-forgotpass-container-form-fieldname{
+    font-size: 18px;
+    font-weight: 600;
+}
+.tutorpanel-forgotpass-input-field{
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+.tutorpanel-forgotpass-input-field:focus {
+   border: none;
+   border-bottom: 2px solid gray;
+   outline: none;
+
+}
+
+#tutorpanel-forgotpass-loginfont{
+    font-size: larger;
+    margin-right: 10px;
+}
+
+
+.tutorpanel-forgotpass-conditions-topic{
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+   
+}
+.tutorpanel-forgotpass-conditions-topics{
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-inline: 10px;
+}
+.tutorpanel-forgotpass-conditions-topics:hover{
+    color: #ffa502;
+ }
+.vl {
+  border-left: 2px solid rgb(7, 8, 7);
+  height: 20px;
+  font-weight: 600;
+  align-items: center;
+}
+
+
+.tutorpanel-forgotpass-others{
+    width: 30vw;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tutorpanel-forgotpass-others-topics{
+    text-decoration: none;
+    font-weight: 600;
+}
+.tutorpanel-forgotpass-others-topics:hover{
+   color: #ffa502;
+}
+
+.tutorpanel-forgotpass-container-form-enteremail{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 826px) {
+
+    
+.tutorpanel-forgotpass-container {
+    width: 100vw;
+    height: auto;
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-inline: auto;
+  
+}
+.tutorpanel-forgotpass-container-form {
+    background-color: #fff;
+    width: 90vw;
+    border-radius: 10px;
+    height: auto;
+    margin-top: 40px;
+    padding-block: 20px;
+    margin-inline: auto;
+    
+}
+.tutorpanel-forgotpass-others{
+    width: 90vw;
+}
+}
+
+.tutorpanel-forgotpass-container-text-box{
+    text-align: center;
+}
+.tutorpanel-forgotpass-container-text-box p{
+    text-align: center;
+    color: #64707b;
+    font-weight: 400;
+    font-size: 16px;
+}
+#tutorpanel-forgotpass-container-find-contact{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
+/* Confirm pass */
+
+
+
+
+.tutorpanel-confirmpass-container{
+    background: #dfe6e9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    
+}
+.tutorpanel-confirmpass-container-upper{
+    padding-top: 40px;
+    color: whitesmoke;
+}
+.tutorpanel-confirmpass-container-form {
+    background-color: #fff;
+    width: 40vw;
+    border-radius: 10px;
+    height: auto;
+    margin-top: 40px;
+    padding-block: 20px;
+    margin-inline: auto;
+    
+   
+}
+
+
+.tutorpanel-confirmpass-container-form-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tutorpanel-confirmpass-container-form-top-logo {
+    margin-right: 10px;
+}
+
+
+.tutorpanel-confirmpass-container-form-name{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #64707b;
+}
+
+
+
+.tutorpanel-confirmpass-container-form-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.tutorpanel-confirmpass-subimt-button {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #3742fa;
+    border: 2px solid gray;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    padding: 7px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tutorpanel-confirmpass-subimt-button:hover {
+  
+    background-color: #ffa502;
+}
+
+.tutorpanel-confirmpass-container-form-fieldname{
+    color: #64707b;
+    font-size: 18px;
+    font-weight: 600;
+}
+.tutorpanel-confirmpass-input-field{
+    text-align: center;
+    height: 40px;
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+.tutorpanel-confirmpass-input-field:focus {
+   border: none;
+   border-bottom: 2px solid gray;
+   outline: none;
+
+}
+
+#tutorpanel-confirmpass-loginfont{
+    font-size: larger;
+    margin-right: 10px;
+}
+
+
+.tutorpanel-confirmpass-conditions-topic{
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+   
+}
+.tutorpanel-confirmpass-conditions-topics{
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-inline: 10px;
+}
+.tutorpanel-confirmpass-conditions-topics:hover{
+    color: #ffa502;
+ }
+.vl {
+  border-left: 2px solid rgb(7, 8, 7);
+  height: 20px;
+  font-weight: 600;
+  align-items: center;
+}
+
+
+.tutorpanel-confirmpass-others{
+    width: 30vw;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tutorpanel-confirmpass-others-topics{
+    text-decoration: none;
+    font-weight: 600;
+}
+.tutorpanel-confirmpass-others-topics:hover{
+   color: #ffa502;
+}
+
+@media screen and (max-width: 826px) {
+
+    
+.tutorpanel-confirmpass-container {
+    width: 100vw;
+    height: auto;
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-inline: auto;
+  
+}
+.tutorpanel-confirmpass-container-form {
+    background-color: #fff;
+    width: 90vw;
+    border-radius: 10px;
+    height: auto;
+    margin-top: 40px;
+    padding-block: 20px;
+    margin-inline: auto;
+  
+}
+.tutorpanel-confirmpass-others{
+    width: 90vw;
+}
+}
+
+
+.animate__animated.animate__bounce {
+    --animate-duration: 0.5s;
+  }

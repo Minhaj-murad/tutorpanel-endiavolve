@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+
+    <!-- fontawesome cdn link (6.2.1) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+ 
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="/tutorpanel-dashboard/tutorpanel-dash/tutorpanel-dash.css">
+    <link rel="stylesheet" href="/tutorpanel-dashboard/tutorpanel-dash/tutorpanel-editprofile/tutorpanel-editprofile.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-light sticky-top d-flex justify-content-between  py-0">
+        <a href="#" class="me-4">
+
+            <img src="/tutorpanel-dashboard/images/logo.png" style="height: 40px; " alt="">
+        </a>
+        <a href="#" class="tutorpanel-sidebar-toggler flex-shrink-0" id="tutorpanel-navlink-bar">
+            <i class="fa fa-bars" id="tutorpanel-navlink-bar-text"></i>
+        </a>
+
+        <div class="navbar-nav align-items-center ms-auto">
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <i class="fa fa-envelope" id="tutorpanel-navlink-message"></i>
+
+                </a>
+                <div class="dropdown-menu dropdown-menu-end ">
+                    <ul class="navbar-ul">
+                        <li class="dropdown-item">Karim sends you a message</li>
+                        <li class="dropdown-item">Riha sends you a message</li>
+                        <li class="dropdown-item">Sahed sends you a message</li>
+                        <li class="dropdown-item">Hasan sends you a message</li>
+                        <li class="dropdown-item" style="border: none;">Sahed sends you a message</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <i class="fa fa-bell " id="tutorpanel-navlink-notification"></i>
+
+                </a>
+                <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+
+                    <ul class="navbar-ul">
+                        <li class="dropdown-item">
+                            <h6 class="fw-normal mb-0">Profile updated</h6>
+                            <small>15 minutes ago</small>
+                        </li>
+                        <li class="dropdown-item">
+                            <h6 class="fw-normal mb-0">New tutorpanel added</h6>
+                            <small>15 minutes ago</small>
+                        </li>
+                        <li class="dropdown-item " style="border: none;">
+                            <h6 class="fw-normal mb-0">Password changed</h6>
+                            <small>15 minutes ago</small>
+                        </li>
+
+                    </ul>
+
+
+
+                </div>
+            </div>
+            <div class="nav-item dropdown ms-4">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <img class="rounded-circle " src="/tutorpanel-dashboard/images/x9.jpg" alt=""
+                        style="width: 40px; height: 40px;">
+                    <span class="d-none d-lg-inline-flex" id="tutorpanel-tutorpanel-name">Zayn Malik</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+
+                    <ul class="navbar-ul-profile p-2">
+                        <div class="tutorpanel-nav-tutorpanel-profile d-flex align-items-center justify-content-center pb-3">
+                            <img src="/tutorpanel-dashboard/images/x9.jpg"
+                                style="height: 60px; width: 60px; border-radius: 50%;" alt="">
+                            <div class="ms-4">
+                                <h6 class="tutorpanel-tutorpanel-name1">Zayn Malik</h6>
+                                <p class="mb-0">Zayn@gmail.com</p>
+                            </div>
+
+                        </div>
+                        <li>
+                            <a href="/tutorpanel-dashboard/tutorpanel-dash/tutorpanel-editprofile/tutorpanel-editprofile.html"
+                                class="dropdown-item d-flex justify-content-between align-items-center mt-2 "
+                                style="border: none;">
+                                <div class="dropdown-item-data d-flex justify-content-center align-items-center ">
+                                    <i class="fa-solid fa-tutorpanel tutorpanel-tutorpanel-icon" id=""></i>
+                                    <span class="ms-4 tutorpanel-tutorpanel-text ">Edit Profile</span>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-chevron-right "></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-item d-flex justify-content-between align-items-center mt-2 "
+                            style="border: none;">
+                            <div class="dropdown-item-data d-flex justify-content-center align-items-center ">
+                                <i class="fa-solid fa-gear tutorpanel-tutorpanel-icon"></i>
+                                <span class="ms-4 tutorpanel-tutorpanel-text">Setting and Privacy</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+                        <li class="dropdown-item d-flex justify-content-between align-items-center mt-2 "
+                            style="border: none;">
+                            <div class="dropdown-item-data d-flex justify-content-center align-items-center ">
+                                <i class="fa-solid fa-question tutorpanel-tutorpanel-icon"></i>
+                                <span class="ms-4 tutorpanel-tutorpanel-text">Help and Support</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+                        <li class="dropdown-item d-flex justify-content-between align-items-center mt-2 "
+                            style="border: none;">
+                            <div class="dropdown-item-data d-flex justify-content-center align-items-center ">
+                                <i class="fa-solid fa-moon tutorpanel-tutorpanel-icon"></i>
+                                <span class="ms-4 tutorpanel-tutorpanel-text">Display and Accessibility</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+                        <li class="dropdown-item d-flex justify-content-between align-items-center mt-2 "
+                            style="border: none;">
+                            <div class="dropdown-item-data d-flex justify-content-center align-items-center ">
+                                <i class="fa-solid fa-right-to-bracket tutorpanel-tutorpanel-icon"></i>
+                                <span class="ms-4 tutorpanel-tutorpanel-text">Logout</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div>
+        <!-- tutorpanel-sidebar Start -->
+        <div id="tutorpanel-sidebar" class="tutorpanel-sidebar">
+            <nav class="navbar bg-light navbar-light">
+
+                <div class="navbar-nav w-100">
+                    <a href="/tutorpanel-dashboard/tutorpanel-dash/tutorpaneldash.html" class="nav-item nav-link "><i
+                            class="fa fa-tachometer-alt me-2 " style="
+                        background: none" style="
+                        background: none"></i><span class="tutorpanel-tutorpanel-text"> Video Lists </span></a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                class="fa fa-laptop me-2 " style="
+                        background: none"></i><span class="tutorpanel-tutorpanel-text"> Tutor Panel</span></a>
+                        <div class="dropdown-menu bg-transparent border-0" style="
+                        padding-block: 0;
+                        margin: 0;">
+
+                            <a href="/tutorpanel-dashboard/tutorpanel-dash/questionlists/questionlists.html" class="dropdown-item">Question Lists</a>
+                            
+
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                class="fa fa-keyboard me-2 " style="
+                        background: none"></i><span class="tutorpanel-tutorpanel-text"> Landing Page</span></a>
+                        <div class="dropdown-menu bg-transparent border-0" style="
+                        padding-block: 0;
+                        margin: 0;">
+
+                            <a href="/blogs/blogs.html" class="dropdown-item">Blogs</a>
+                            <a href="/career/career.html" class="dropdown-item">Career Lists</a>
+                            <a href="/contacts/contacts.html" class="dropdown-item">Contact Us Lists</a>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </nav>
+        </div>
+        <!-- tutorpanel-sidebar End -->
+
+
+       <!-- Content Start -->
+       <div class="content">
+
+    
+
+            <div class="container tutorpanel-dashboard">
+                <div class="row tutorpanel-dashboard-box">
+    
+                   
+    
+                    <div class="tutorpanel-dashboard-left col-lg-3">
+    
+                        <div class="tutorpanel-dashboard-info">
+    
+                            <div class="tutorpanel-dashboard-info-image no-image" id="tutorpanel-dashboard-info-image">
+                                <img src="" alt="" id="tutorpanel-dashboard-image">
+                            </div>
+    
+                            <div class="tutorpanel-dashboard-info-rest">
+                            
+                                <div class="tutorpanel-dashboard-info-rest-detail">
+                                    <span>Name</span>
+                                </div>
+                            
+                                <div class="tutorpanel-dashboard-info-rest-detail">
+                                    <span id="tutorpanel-dashboard-info-rest-name">email@example.com</span>
+                                </div>
+                            
+                                <div class="tutorpanel-dashboard-change-image">
+                                    <label for="file-upload" class="custom-file-upload">
+                                        <i class="fa fa-camera" aria-hidden="true"></i> Change Image
+                                    </label>
+                                    <input id="file-upload" type="file"/>
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+    
+                        <ul class="tutorpanel-dashboard-options">
+                            <div class="tutorpanel-dashboard-nav">
+                                <button class="btn" type="button" id="tutorpanel-dashboard-nav-toggle">
+                                    <i class="fa fa-list-ul"></i>
+                                </button>
+                                
+                                <label for="" class="tutorpanel-dashboard-nav-label"><b>&nbsp; >&nbsp;&nbsp; Password</b></label>
+                            </div>
+                            <div id="collapse-dashboard">
+                                <li class="tutorpanel-dashboard-options-item"><a href="/tutorpanel-dashboard/tutorpanel-dash/tutorpanel-editprofile/tutorpanel-editprofile.html">Profile</a></li>
+                                <li class="tutorpanel-dashboard-options-item active"><a href="/tutorpanel-dashboard/tutorpanel-dash/tutorpanel-editprofile/tutorpanel-changepass.html">Password</a></li>
+                                
+                               
+                            </div>
+                        </ul>
+    
+                    </div>
+                    
+                    <div class="tutorpanel-dashboard-right col-lg-9">
+                         
+                        <form action="">
+    
+                            <!-- Change Password -->
+                            <div class="tutorpanel-dashboard-right-box">
+                                <div class="tutorpanel-dashboard-heading">
+                                    <h4 class="tutorpanel-dashboard-heading-text">User Profile</h4>
+                                </div>
+                               <div class="tutorpanel-dashboard-right-box-div">
+                                <div class="tutorpanel-dashboard-right-heading mb-3">
+                                    <h5 class="pb-2">Change Password</h5>
+                                </div>
+    
+                                <div class="tutorpanel-dashboard-right-info">
+                                    <div class="tutorpanel-dashboard-right-field">
+                                        <label for="">Current Password</label>
+                                        <input type="text" class="form-control" name="" id="">
+                                        <span id="tutorpanel-dashboard-old-pass"></span>
+                                    </div>
+    
+                                    <div class="tutorpanel-dashboard-right-field">
+                                        <label for="">New Password</label>
+                                        <input type="password" class="form-control" name="" id="tutorpanel-dashboard-pass">
+                                        <span id="tutorpanel-dashboard-pass-error"></span>
+                                    </div>
+    
+                                    <div class="tutorpanel-dashboard-right-field">
+                                        <label for="">Confirm Password</label>
+                                        <input type="password" class="form-control" name="" id="tutorpanel-dashboard-cpass">
+                                        <span id="tutorpanel-dashboard-cpass-error"></span>
+                                    </div>
+                                </div>
+    
+                               </div>
+                            </div>
+                            
+                            <div class="tutorpanel-dashboard-buttons">
+                                <button type="button" class="btn">Edit</button>
+                                <button type="button" class="btn">Cancel</button>
+                            </div>
+    
+                        </form>
+    
+                    </div>
+    
+                </div>
+            </div>
+    
+       
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <!-- Content ends -->
+
+
+
+     
+     
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <!-- JavaScript Libraries -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script>
+        (function ($) {
+            "use strict";
+
+
+            // tutorpanel-sidebar Toggler
+            $('.tutorpanel-sidebar-toggler').click(function () {
+                $('.tutorpanel-sidebar, .content').toggleClass("open");
+                return false;
+            });
+
+
+
+
+
+        })(jQuery);
+
+    </script>
+
+
+    <!-- limiting word -->
+<script>
+    // var bloggersdata = document.getElementsByClassName("bloglists-tabledata-content");
+   
+    // var myText = document.getElementsByClassName("bloglists-tabledata-meassage");
+
+    $(function () {
+    
+    var maxL = 50;
+    
+    $('.tutorpanel-videolists-tabledata-messages-container').each(function () {
+        
+        var text = $(this).text();
+        if(text.length > maxL) {
+            
+            var begin = text.substr(0, maxL),
+                end = text.substr(maxL);
+
+            $(this).html(begin)
+                .append($('<a class="readmore"/>').attr('href', '#').html('...'))
+                .append($('<div class="hidden"/>').html(end));
+                
+            
+        }
+        
+        
+    });
+            
+  
+    
+    
+})
+       
+   </script>
+
+
+<!--  -->
+<script src="/tutorpanel-dashboard/js/tutorpnel-dash.js"></script>
+
+</body>
+
+</html>
